@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const app = express();
 const PORT = process.env.PORT || 8080;
-const MONGO = process.env.MONGOURL;
+const MONGO = process.env.MONGO_URI;
 app.use(express.json());
 
 app.use(
